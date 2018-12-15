@@ -79,4 +79,4 @@ if __name__ == '__main__':
         data = json.load(f)
         mission = data["mission"]
         # app.run(host="127.0.0.1", port=5000)
-        app.run(host="172-31-28-201",port=8080)
+        app.run(host="172.31.28.201",port=8080)
