@@ -74,7 +74,7 @@ def update_mission_data():
 @app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json
-    player_card.append(result)
+    player_card.push(result)
     print(player_card)
     return jsonify(player_card)
 
