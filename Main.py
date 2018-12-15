@@ -83,6 +83,7 @@ if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
         player_card["player_card"] = data
+        print(player_card)
 
 
     with open(config_location+'config/mission_card.json') as f:
