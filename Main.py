@@ -8,6 +8,7 @@ config_location = "/home/ubuntu/pso2_keeper_backend/"
 mission = {}
 player_card = []
 
+
 @app.route('/',methods=['POST'])
 def enter_api_system():
     result = {
@@ -68,6 +69,7 @@ def update_mission_data():
         f.close()
         return jsonify({"status": True})
 
+
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
@@ -76,4 +78,5 @@ if __name__ == '__main__':
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
         mission = data["mission"]
-        app.run(host="127.0.0.1", port=5000)
+        # app.run(host="127.0.0.1", port=5000)
+        app.run(host="172-31-28-201",port=8080)
