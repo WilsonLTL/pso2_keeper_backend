@@ -44,7 +44,6 @@ def update_player_card_data():
 
 @app.route('/update_mission_card_data', methods=['POST'])
 def update_mission_card_data():
-    print(request.json)
     result = request.json
     with open(config_location+'config/mission_card.json', 'w') as f:
         result = {
@@ -55,6 +54,19 @@ def update_mission_card_data():
         f.close()
         return jsonify({"status":True})
 
+
+@app.route('/update_mission_data', methods=['POST'])
+def update_mission_data():
+    result = request.json
+    with open(config_location + 'config/mission_card.json', 'w') as f:
+        mission = result["mission"]
+        result = {
+            "mission": mission,
+            "mission_card": result["mission_card"]
+        }
+        json.dump(result, f)
+        f.close()
+        return jsonify({"status": True})
 
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
