@@ -1,1 +1,220 @@
-{"player_card": [{"PS": "", "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg", "class": "FO", "color": "red", "id": 1, "leader": true, "name": "Matoi1"}, {"PS": "", "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg", "class": "TE", "color": "red", "id": 2, "leader": false, "name": "Annette1"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg", "class": "HU", "color": "red", "id": 3, "leader": false, "name": "\u5047\u97621"}, {"PS": "", "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg", "class": "BR", "color": "red", "id": 4, "leader": false, "name": "IO1"}, {"PS": "", "avatar": "https://4.bp.blogspot.com/-LETHHzc-yNA/WtbWZwcehfI/AAAAAAAACR0/NXl13s4ZeiYapLw59aMPQCfKOor4S_5iQCLcBGAs/s1600/vlcsnap-2016-01-30-21h17m02s171.png", "class": "GU", "color": "blue", "id": 5, "leader": false, "name": "Rina1"}, {"PS": "", "avatar": "https://pbs.twimg.com/media/CsEg94UVMAAVi7F.jpg", "class": "BR", "color": "blue", "id": 6, "leader": false, "name": "\u706b\u7d991"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg", "class": "HU", "color": "blue", "id": 7, "leader": false, "name": "\u6c37\u83891"}, {"PS": "", "avatar": "https://i.pinimg.com/originals/b9/62/c4/b962c400f0547b79a1e130a5706829c1.jpg", "class": "SU", "color": "blue", "id": 8, "leader": false, "name": "\u611b\u4f731"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg", "class": "HU", "color": "green", "id": 9, "leader": false, "name": "\u6c37\u83892"}, {"PS": "", "avatar": "https://s1.zerochan.net/Stratos.%28PSO2%29.600.2120744.jpg", "class": "HR", "color": "green", "id": 10, "leader": false, "name": "Stratos1"}, {"PS": "", "avatar": "https://static.zerochan.net/Nagisa.%28Psp2i%29.full.273568.jpg", "class": "HU", "color": "green", "id": 11, "leader": false, "name": "Nagisa1"}, {"PS": "", "avatar": "https://i.pinimg.com/originals/06/0d/32/060d32c62c401427a82e82250d8a1e56.jpg", "class": "Fi", "color": "green", "id": 12, "leader": false, "name": "Gene1"}, {"PS": "", "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg", "class": "FO", "color": "yellow", "id": 13, "leader": false, "name": "Matoi2"}, {"PS": "", "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg", "class": "TE", "color": "yellow", "id": 14, "leader": false, "name": "Annette2"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg", "class": "HU", "color": "yellow", "id": 15, "leader": false, "name": "\u5047\u97622"}, {"PS": "", "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg", "class": "BR", "color": "yellow", "id": 16, "leader": false, "name": "IO2"}, {"PS": "", "avatar": "https://4.bp.blogspot.com/-LETHHzc-yNA/WtbWZwcehfI/AAAAAAAACR0/NXl13s4ZeiYapLw59aMPQCfKOor4S_5iQCLcBGAs/s1600/vlcsnap-2016-01-30-21h17m02s171.png", "class": "RA", "color": "grey", "id": 17, "leader": false, "name": "Rina2"}, {"PS": "", "avatar": "https://pbs.twimg.com/media/CsEg94UVMAAVi7F.jpg", "class": "BR", "color": "grey", "id": 18, "leader": false, "name": "\u706b\u7d992"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg", "class": "HU", "color": "grey", "id": 19, "leader": false, "name": "\u6c37\u83893"}, {"PS": "", "avatar": "https://i.pinimg.com/originals/b9/62/c4/b962c400f0547b79a1e130a5706829c1.jpg", "class": "SU", "color": "grey", "id": 20, "leader": false, "name": "\u611b\u4f732"}, {"PS": "", "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg", "class": "HU", "color": "orange", "id": 21, "leader": false, "name": "\u6c37\u83894"}, {"PS": "", "avatar": "https://s1.zerochan.net/Stratos.%28PSO2%29.600.2120744.jpg", "class": "HR", "color": "orange", "id": 22, "leader": false, "name": "Stratos2"}, {"PS": "", "avatar": "https://static.zerochan.net/Nagisa.%28Psp2i%29.full.273568.jpg", "class": "HU", "color": "orange", "id": 23, "leader": false, "name": "Nagisa2"}, {"PS": "", "avatar": "https://i.pinimg.com/originals/06/0d/32/060d32c62c401427a82e82250d8a1e56.jpg", "class": "FI", "color": "orange", "id": 24, "leader": false, "name": "Gene2"}]}
+{
+    "player_card": [
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg",
+            "class": "FO",
+            "color": "red",
+            "id": 1,
+            "leader": true,
+            "name": "Matoi1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg",
+            "class": "TE",
+            "color": "red",
+            "id": 2,
+            "leader": false,
+            "name": "Annette1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg",
+            "class": "HU",
+            "color": "red",
+            "id": 3,
+            "leader": false,
+            "name": "假面1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg",
+            "class": "BR",
+            "color": "red",
+            "id": 4,
+            "leader": false,
+            "name": "IO1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://4.bp.blogspot.com/-LETHHzc-yNA/WtbWZwcehfI/AAAAAAAACR0/NXl13s4ZeiYapLw59aMPQCfKOor4S_5iQCLcBGAs/s1600/vlcsnap-2016-01-30-21h17m02s171.png",
+            "class": "GU",
+            "color": "blue",
+            "id": 5,
+            "leader": false,
+            "name": "Rina1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://pbs.twimg.com/media/CsEg94UVMAAVi7F.jpg",
+            "class": "BR",
+            "color": "blue",
+            "id": 6,
+            "leader": false,
+            "name": "火継1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "blue",
+            "id": 7,
+            "leader": false,
+            "name": "氷莉1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/b9/62/c4/b962c400f0547b79a1e130a5706829c1.jpg",
+            "class": "SU",
+            "color": "blue",
+            "id": 8,
+            "leader": false,
+            "name": "愛佳1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "green",
+            "id": 9,
+            "leader": false,
+            "name": "氷莉2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://s1.zerochan.net/Stratos.%28PSO2%29.600.2120744.jpg",
+            "class": "HR",
+            "color": "green",
+            "id": 10,
+            "leader": false,
+            "name": "Stratos1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Nagisa.%28Psp2i%29.full.273568.jpg",
+            "class": "HU",
+            "color": "green",
+            "id": 11,
+            "leader": false,
+            "name": "Nagisa1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/06/0d/32/060d32c62c401427a82e82250d8a1e56.jpg",
+            "class": "Fi",
+            "color": "green",
+            "id": 12,
+            "leader": false,
+            "name": "Gene1"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg",
+            "class": "FO",
+            "color": "yellow",
+            "id": 13,
+            "leader": false,
+            "name": "Matoi2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg",
+            "class": "TE",
+            "color": "yellow",
+            "id": 14,
+            "leader": false,
+            "name": "Annette2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg",
+            "class": "HU",
+            "color": "yellow",
+            "id": 15,
+            "leader": false,
+            "name": "假面2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg",
+            "class": "BR",
+            "color": "yellow",
+            "id": 16,
+            "leader": false,
+            "name": "IO2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://4.bp.blogspot.com/-LETHHzc-yNA/WtbWZwcehfI/AAAAAAAACR0/NXl13s4ZeiYapLw59aMPQCfKOor4S_5iQCLcBGAs/s1600/vlcsnap-2016-01-30-21h17m02s171.png",
+            "class": "RA",
+            "color": "grey",
+            "id": 17,
+            "leader": false,
+            "name": "Rina2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://pbs.twimg.com/media/CsEg94UVMAAVi7F.jpg",
+            "class": "BR",
+            "color": "grey",
+            "id": 18,
+            "leader": false,
+            "name": "火継2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "grey",
+            "id": 19,
+            "leader": false,
+            "name": "氷莉3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/b9/62/c4/b962c400f0547b79a1e130a5706829c1.jpg",
+            "class": "SU",
+            "color": "grey",
+            "id": 20,
+            "leader": false,
+            "name": "愛佳2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "orange",
+            "id": 21,
+            "leader": false,
+            "name": "氷莉4"
+        },
+        {
+            "PS": "",
+            "avatar": "https://s1.zerochan.net/Stratos.%28PSO2%29.600.2120744.jpg",
+            "class": "HR",
+            "color": "orange",
+            "id": 22,
+            "leader": false,
+            "name": "Stratos2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Nagisa.%28Psp2i%29.full.273568.jpg",
+            "class": "HU",
+            "color": "orange",
+            "id": 23,
+            "leader": false,
+            "name": "Nagisa2"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/06/0d/32/060d32c62c401427a82e82250d8a1e56.jpg",
+            "class": "FI",
+            "color": "orange",
+            "id": 24,
+            "leader": false,
+            "name": "Gene2"
+        }
+    ]
+}

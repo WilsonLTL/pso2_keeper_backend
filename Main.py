@@ -6,8 +6,10 @@ CORS(app)
 
 # config_location = "/home/ubuntu/pso2_keeper_backend/"
 config_location =""
-mission = {}
-player_card = {}
+global mission
+global player_card
+global new_player_card
+new_player_card = {"player_card":[]}
 
 
 @app.route('/',methods=['POST'])
@@ -37,18 +39,17 @@ def update_player_card_data():
     res = request.json
     with open(config_location+'config/player_card.json', 'w') as f:
         result = {
-            "player_card":[]
+            "player_card":res
         }
-        for x in player_card["player_card"]:
-            exist = False
-            for r in res:
-                if x["name"] == r["name"]:
-                    result["player_card"].append(r)
-                    exist = True
-                    break
-            if exist is False:
-                result["player_card"].append(x)
-                print(result)
+        # for x in player_card["player_card"]:
+        #     for r in res:
+        #         if x["name"] == r["name"]:
+        #             result["player_card"].append(r)
+        #             break
+        for w in new_player_card["player_card"]:
+            result["player_card"].append(w)
+        player_card = result
+        new_player_card["player_card"] = []
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})
@@ -84,8 +85,8 @@ def update_mission_data():
 @app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json
-    player_card["player_card"].append(result)
-    print(player_card)
+    new_player_card["player_card"].append(result["player"])
+    print("new player"+str(new_player_card))
     return jsonify(player_card)
 
 
@@ -93,7 +94,6 @@ if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
         player_card = data
-        print(player_card)
 
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
