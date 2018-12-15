@@ -48,6 +48,7 @@ def update_player_card_data():
                     break
             if exist is False:
                 result["player_card"].append(x)
+                print(result)
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})
