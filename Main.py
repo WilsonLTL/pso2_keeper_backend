@@ -34,11 +34,19 @@ def get_mission_card_data():
 
 @app.route('/update_player_card_data', methods=['POST'])
 def update_player_card_data():
-    result = request.json
+    res = request.json
     with open(config_location+'config/player_card.json', 'w') as f:
         result = {
-            "player_card":result
+            "player_card":[]
         }
+        for x in player_card["player_card"]:
+            exist = False
+            for r in res["player_card"]:
+                if x["name"] == r["name"]:
+                    x = r
+                    exist = True
+            if exist is False:
+                result["player_card"].append(x)
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})

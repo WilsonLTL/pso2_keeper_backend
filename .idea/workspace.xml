@@ -20,8 +20,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="247">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/config/player_card.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="4304" selection-start-column="4304" selection-end-column="4304" />
+              <caret column="164" selection-start-column="160" selection-end-column="164" />
             </state>
           </provider>
         </entry>
@@ -103,6 +103,11 @@
             <path>
               <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,8 +188,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3291714" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25312147" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26168224" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25312147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26168224" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -242,14 +247,14 @@
     <entry file="file://$PROJECT_DIR$/config/player_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="4304" selection-start-column="4304" selection-end-column="4304" />
+          <caret column="164" selection-start-column="160" selection-end-column="164" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="247">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
