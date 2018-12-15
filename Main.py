@@ -43,8 +43,9 @@ def update_player_card_data():
             exist = False
             for r in res["player_card"]:
                 if x["name"] == r["name"]:
-                    x = r
+                    result["player_card"].append(r)
                     exist = True
+                    break
             if exist is False:
                 result["player_card"].append(x)
         json.dump(result, f)
