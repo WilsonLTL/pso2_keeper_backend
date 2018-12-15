@@ -86,9 +86,10 @@ def update_mission_data():
 def add_new_player():
     result = request.json
     player_card["player_card"].append(result["player"])
-    print("new player"+str(new_player_card))
-    json.dump(result, f)
-    f.close()
+    print("new player"+str(result["player"]))
+    with open(config_location + 'config/player_card.json', 'w') as f:
+        json.dump(result, f)
+        f.close()
     return jsonify(player_card)
 
 
