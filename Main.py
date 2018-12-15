@@ -24,6 +24,8 @@ def enter_api_system():
 def get_player_card_data():
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
+        global player_card
+        player_card = data
         return jsonify(data)
 
 
@@ -31,6 +33,8 @@ def get_player_card_data():
 def get_mission_card_data():
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
+        global mission
+        mission = data["mission"]
         return jsonify(data)
 
 
@@ -49,7 +53,9 @@ def update_player_card_data():
         # for w in new_player_card["player_card"]:
         #     result["player_card"].append(w)
         # new_player_card["player_card"] = []
+        global player_card
         player_card = result
+        print(player_card)
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})
@@ -85,10 +91,12 @@ def update_mission_data():
 @app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json
+    print(result)
+    print(player_card)
     player_card["player_card"].append(result["player"])
     print("new player"+str(result["player"]))
     with open(config_location + 'config/player_card.json', 'w') as f:
-        json.dump(result, f)
+        json.dump(player_card, f)
         f.close()
     return jsonify(player_card)
 
@@ -96,10 +104,12 @@ def add_new_player():
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
+        global player_card
         player_card = data
 
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
+        global mission
         mission = data["mission"]
         # app.run(host="127.0.0.1", port=5000)
         app.run(host="172.31.28.201",port=8080)
