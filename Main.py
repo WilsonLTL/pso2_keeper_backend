@@ -4,8 +4,8 @@ from flask import Flask,jsonify,request
 app = Flask(__name__)
 CORS(app)
 
-config_location = "/home/ubuntu/pso2_keeper_backend/"
-# config_location =""
+# config_location = "/home/ubuntu/pso2_keeper_backend/"
+config_location =""
 global mission
 global player_card
 global new_player_card
@@ -46,10 +46,10 @@ def update_player_card_data():
         #         if x["name"] == r["name"]:
         #             result["player_card"].append(r)
         #             break
-        for w in new_player_card["player_card"]:
-            result["player_card"].append(w)
+        # for w in new_player_card["player_card"]:
+        #     result["player_card"].append(w)
+        # new_player_card["player_card"] = []
         player_card = result
-        new_player_card["player_card"] = []
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})
@@ -85,8 +85,10 @@ def update_mission_data():
 @app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json
-    new_player_card["player_card"].append(result["player"])
+    player_card["player_card"].append(result["player"])
     print("new player"+str(new_player_card))
+    json.dump(result, f)
+    f.close()
     return jsonify(player_card)
 
 
@@ -98,5 +100,5 @@ if __name__ == '__main__':
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
         mission = data["mission"]
-        # app.run(host="127.0.0.1", port=5000)
-        app.run(host="172.31.28.201",port=8080)
+        app.run(host="127.0.0.1", port=5000)
+        # app.run(host="172.31.28.201",port=8080)
