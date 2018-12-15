@@ -7,7 +7,7 @@ CORS(app)
 config_location = "/home/ubuntu/pso2_keeper_backend/"
 # config_location =""
 mission = {}
-player_card = {"player_card":[]}
+player_card = {}
 
 
 @app.route('/',methods=['POST'])
@@ -82,7 +82,7 @@ def add_new_player():
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
-        player_card["player_card"] = data
+        player_card = data
         print(player_card)
 
 
