@@ -5,6 +5,7 @@ app = Flask(__name__)
 CORS(app)
 
 config_location = "/home/ubuntu/pso2_keeper_backend/"
+# config_location =""
 mission = {}
 player_card = []
 
@@ -70,10 +71,19 @@ def update_mission_data():
         return jsonify({"status": True})
 
 
+@app.route('add_new_player', methods=['POST'])
+def add_new_player():
+    result = request.json["player"]
+    player_card.append(result)
+    print(player_card)
+    return jsonify(player_card)
+
+
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
         player_card = data
+
 
     with open(config_location+'config/mission_card.json') as f:
         data = json.load(f)
