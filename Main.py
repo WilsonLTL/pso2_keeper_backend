@@ -71,7 +71,7 @@ def update_mission_data():
         return jsonify({"status": True})
 
 
-@app.route('add_new_player', methods=['POST'])
+@app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json["player"]
     player_card.append(result)
