@@ -4,10 +4,11 @@ from flask import Flask,jsonify,request
 app = Flask(__name__)
 CORS(app)
 
-config_location = "/home/ubuntu/pso2_keeper_backend/"
-# config_location =""
+# config_location = "/home/ubuntu/pso2_keeper_backend/"
+config_location =""
 global mission
 global player_card
+global quote
 global new_player_card
 new_player_card = {"player_card":[]}
 
@@ -35,6 +36,8 @@ def get_mission_card_data():
         data = json.load(f)
         global mission
         mission = data["mission"]
+        global quote
+        quote = data["quote"]
         return jsonify(data)
 
 
@@ -55,7 +58,6 @@ def update_player_card_data():
         # new_player_card["player_card"] = []
         global player_card
         player_card = result
-        print(player_card)
         json.dump(result, f)
         f.close()
         return jsonify({"status":True})
@@ -67,7 +69,8 @@ def update_mission_card_data():
     with open(config_location+'config/mission_card.json', 'w') as f:
         result = {
             "mission":mission,
-            "mission_card":result["mission_card"]
+            "mission_card":result["mission_card"],
+            "quote":quote
         }
         json.dump(result, f)
         f.close()
@@ -78,10 +81,14 @@ def update_mission_card_data():
 def update_mission_data():
     result = request.json
     with open(config_location + 'config/mission_card.json', 'w') as f:
+        global mission
         mission = result["mission"]
+        global quote
+        quote = result["quote"]
         result = {
             "mission": mission,
-            "mission_card": result["mission_card"]
+            "mission_card": result["mission_card"],
+            "quote": quote
         }
         json.dump(result, f)
         f.close()
@@ -111,5 +118,7 @@ if __name__ == '__main__':
         data = json.load(f)
         global mission
         mission = data["mission"]
-        # app.run(host="127.0.0.1", port=5000)
-        app.run(host="172.31.28.201",port=8080)
+        global quote
+        quote = data["quote"]
+        app.run(host="127.0.0.1", port=5000)
+        # app.run(host="172.31.28.201",port=8080)
