@@ -4,8 +4,8 @@ from flask import Flask,jsonify,request
 app = Flask(__name__)
 CORS(app)
 
-# config_location = "/home/ubuntu/pso2_keeper_backend/"
-config_location =""
+config_location = "/home/ubuntu/pso2_keeper_backend/"
+# config_location =""
 global mission
 global player_card
 global quote
@@ -120,5 +120,5 @@ if __name__ == '__main__':
         mission = data["mission"]
         global quote
         quote = data["quote"]
-        app.run(host="127.0.0.1", port=5000)
-        # app.run(host="172.31.28.201",port=8080)
+        # app.run(host="127.0.0.1", port=5000)
+        app.run(host="172.31.28.201",port=8080)

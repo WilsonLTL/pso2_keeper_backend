@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup/config/mission_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/backup/config/mission_card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mission_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/mission_card.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="102" column="51" lean-forward="true" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
+            <state relative-caret-position="120">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -31,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mission_card.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mission_card.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/mission_card.json">
           <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="45" selection-start-column="45" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mission_card.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -52,6 +59,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>player_card</find>
+      <find>qa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -66,8 +74,8 @@
         <option value="$PROJECT_DIR$/backup/config/simple_player_card.json" />
         <option value="$PROJECT_DIR$/config/player_card.json" />
         <option value="$PROJECT_DIR$/backup/config/mission_card.json" />
-        <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/config/mission_card.json" />
+        <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
@@ -195,9 +203,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28036323" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1475596" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2278481" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28036323" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1475596" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2278481" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -252,13 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/config/player_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -280,20 +281,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="102" column="51" lean-forward="true" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
