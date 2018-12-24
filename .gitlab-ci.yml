@@ -2,6 +2,7 @@ stages:
 #  - build
 #  - test
   - docker-deploy
+
 #build:
 #  stage: build
 #  script:
@@ -9,7 +10,7 @@ stages:
 #  - apt-get install -y python-dev python-pip
 #  - pip install -r requirements.txt
 
-test:
+#test:
 #  stage: test
 #  script:
 #  - apt-get update -qy
