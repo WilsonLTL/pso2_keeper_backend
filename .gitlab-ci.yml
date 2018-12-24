@@ -1,18 +1,19 @@
-image: docker:latest
-services:
-- docker:dind
+#image: docker:latest
+#services:
+#- docker:dind
 
 stages:
-#  - build
+  - build
 #  - test
-  - docker-deploy
+#  - docker-deploy
 
-#build:
-#  stage: build
-#  script:
-#  - apt-get update -qy
-#  - apt-get install -y python-dev python-pip
-#  - pip install -r requirements.txt
+build:
+  stage: build
+  script:
+  - apt-get update -qy
+  - apt-get install -y python-dev python-pip
+  - pip install -r requirements.txt
+  - python Main.py
 
 #test:
 #  stage: test
@@ -21,9 +22,9 @@ stages:
 #  - apt-get install -y python-dev python-pip
 #  - pip install -r requirements.txt
 
-docker-deploy:
-  stage: docker-deploy
-  script:
-  - docker build -t cicd-demo .
+#docker-deploy:
+#  stage: docker-deploy
+#  script:
+#  - docker build -t cicd-demo .
 #  - if [ $(docker ps -aq --filter name= cicd-demo) ]; then docker rm -f cicd-demo;fi
 #  - docker run -d -p 5000:5000 cicd-demo
