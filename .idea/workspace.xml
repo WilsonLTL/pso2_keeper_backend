@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,8 +59,8 @@
       <file leaf-file-name=".gitlab-ci.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="15">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -183,15 +184,6 @@
               <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (pso2_keeper_backend) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -272,8 +264,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.28036323" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37116912" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27555987" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37116912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27555987" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -489,8 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>

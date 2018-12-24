@@ -1,4 +1,5 @@
 image: docker:latest
+image: python:3.6-stretch
 
 services:
 - docker:dind
