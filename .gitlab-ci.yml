@@ -1,8 +1,4 @@
-image: docker:latest
 image: python:3.6-stretch
-
-services:
-- docker:dind
 
 stages:
   - build
@@ -22,6 +18,10 @@ build:
 #  - apt-get update -qy
 #  - apt-get install -y python-dev python-pip
 #  - pip install -r requirements.txt
+
+image: docker:latest
+services:
+- docker:dind
 
 docker-deploy:
   stage: docker-deploy
