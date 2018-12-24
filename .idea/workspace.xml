@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -263,8 +263,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.28036323" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37116912" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27555987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37116912" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27555987" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -481,7 +481,7 @@
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
