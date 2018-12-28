@@ -15,6 +15,7 @@ pep8:
     - pip install -r requirements.txt
   tags:
     - python2.7
+    - python3/4
 
 unittest-py27:
   stage: test
@@ -37,8 +38,8 @@ unittest-py34:
 docker-deploy:
   stage: deploy
   script:
-    - docker build -t cicd-demo .
-    - docker run -d -p 5000:5000 cicd-demo
+    - sudo docker build -t cicd-demo .
+    - sudo docker run -d -p 5000:5000 cicd-demo
   tags:
     - uat
   only:
