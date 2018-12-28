@@ -5,7 +5,7 @@
 stages:
   - style
   - test
-#  - deploy
+  - deploy
 
 pep8:
   stage: style
