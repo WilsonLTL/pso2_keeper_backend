@@ -41,6 +41,7 @@ docker-deploy:
 #    - apt-get install curl
 #    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
     - apt-get install docker.io -qy
+    - docker version
     - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 cicd-demo
   tags:
