@@ -43,6 +43,6 @@ docker-deploy:
     - docker login -u wilsonloltl -p Vi26151851@
     - docker build -t wilsonloltl/docker_cicd_testing:cicd-demo .
     - docker run -d -p 5000:5000 wilsonloltl/docker_cicd_testing:cicd-demo
-    - docker push wilsonloltl/docker_cicd_testing:output
+    - docker push wilsonloltl/docker_cicd_testing:cicd-demo
   only:
     - master
