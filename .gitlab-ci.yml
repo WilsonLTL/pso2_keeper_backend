@@ -32,7 +32,7 @@ unittest-py34:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
-  tag:
+  tags:
     - python3/4
 
 docker-deploy:
