@@ -42,8 +42,9 @@ docker-deploy:
     - docker run -d -p 5000:5000 cicd-demo
   tags:
     - uat
-   only:
+  only:
     - master
+
 #build:
 #  stage: build
 #  script:
