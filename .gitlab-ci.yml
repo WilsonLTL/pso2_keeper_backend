@@ -41,9 +41,9 @@ docker-deploy:
 #    - apt-get install curl
 #    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 #    - apt-get install docker.io -qy
-    - service docker start
-    - docker version
-#    - export DOCKER_HOST="tcp://localhost:2375"
+#    - service docker start
+#    - docker version
+    - export DOCKER_HOST="tcp://localhost:2375"
     - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 cicd-demo
   tags:
