@@ -22,7 +22,6 @@ unittest-py27:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
-    - python Main.py
   tags:
     - python2.7
 
@@ -32,19 +31,18 @@ unittest-py34:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
-    - python Main.py
   tags:
     - python3/4
 
 docker-deploy:
   stage: deploy
   script:
-#    - apt-get update -qy
+    - apt-get update -qy
 #    - apt-get install curl
 #    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-#    - apt-get install docker.io
-    - sudo docker build -t cicd-demo .
-    - sudo docker run -d -p 5000:5000 cicd-demo
+    - apt-get install docker.io
+    - docker build -t cicd-demo .
+    - docker run -d -p 5000:5000 cicd-demo
   tags:
     - uat
   only:
