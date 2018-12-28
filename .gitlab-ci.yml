@@ -49,8 +49,8 @@ docker-deploy:
 #    - export DOCKER_HOST="tcp://localhost:2375"
     - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 cicd-demo
-#  tags:
-#    - uat
+  tags:
+    - uat
   only:
     - master
 
