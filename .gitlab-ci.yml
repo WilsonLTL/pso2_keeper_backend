@@ -39,8 +39,8 @@ docker-deploy:
   script:
     - apt-get update -qy
     - apt-get install docker.io
-    - docker build -t cicd-demo .
-    - docker run -d -p 5000:5000 cicd-demo
+#    - docker build -t cicd-demo .
+#    - docker run -d -p 5000:5000 cicd-demo
   tags:
     - uat
   only:
