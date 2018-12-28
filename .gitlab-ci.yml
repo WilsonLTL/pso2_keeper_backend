@@ -44,6 +44,6 @@ docker-deploy:
     - docker run -d -p 5000:5000 cicd-demo
     - docker tag cicd-demo output
     - docker login -u wilsonloltl -p Vi26151851@
-    - docker push wilsonloltl/output
+    - docker push wilsonloltl/docker_cicd_testing:output
   only:
     - master
