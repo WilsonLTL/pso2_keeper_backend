@@ -3,16 +3,53 @@
 #- docker:dind
 
 stages:
-  - build
-#  - test
-#  - docker-deploy
+  - style
+  - test
+  - deploy
 
-build:
-  stage: build
+pep8:
+  stage: style
   script:
-  - apt-get update -qy
-  - apt-get install -y python-dev python-pip
-  - pip install -r requirements.txt
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tags:
+    - python2.7
+    - python3/4
+
+unittest-py27:
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tags:
+    - python2.7
+
+unittest-py34:
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tag:
+    - python3/4
+
+docker-deploy:
+  stage: deploy
+  script:
+    - docker build -t cicd-demo .
+    - docker run -d -p 5000:5000 cicd-demo
+  tags:
+    - uat
+   only:
+    - master
+#build:
+#  stage: build
+#  script:
+#  - docker build -t cicd-demo .
+#  tags:
+#    - uat
 
 #test:
 #  stage: test
@@ -24,6 +61,7 @@ build:
 #docker-deploy:
 #  stage: docker-deploy
 #  script:
-#  - docker build -t cicd-demo .
-#  - if [ $(docker ps -aq --filter name= cicd-demo) ]; then docker rm -f cicd-demo;fi
+##  - if [ $(docker ps -aq --filter name= cicd-demo) ]; then docker rm -f cicd-demo;fi
 #  - docker run -d -p 5000:5000 cicd-demo
+#  tags:
+#    - uat
