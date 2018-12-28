@@ -1,6 +1,6 @@
-image: docker:latest
-services:
-  - docker:dind
+#image: docker:latest
+#services:
+#  - docker:dind
 
 stages:
   - style
@@ -10,40 +10,37 @@ stages:
 pep8:
   stage: style
   script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-    - docker build -t cicd-demo .
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
   tags:
     - python2.7
 
 unittest-py27:
   stage: test
   script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-    - docker build -t cicd-demo .
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
   tags:
     - python2.7
 
 unittest-py34:
   stage: test
   script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-    - docker build -t cicd-demo .
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
   tags:
     - python3/4
 
 docker-deploy:
   stage: deploy
   script:
-#    - apt-get update -qy
-#    - apt-get install curl
-#    - curl -sSL https://get.docker.com/ | sh
-#    - apt-get install docker.io -qy
+    - apt-get update -qy
+    - apt-get install curl
+#    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+    - apt-get install docker.io
     - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 cicd-demo
   tags:
