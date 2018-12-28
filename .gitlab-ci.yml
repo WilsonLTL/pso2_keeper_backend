@@ -7,37 +7,37 @@ stages:
   - test
   - deploy
 
-pep8:
-  stage: style
-  script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - pip install -r requirements.txt
-  tags:
-    - python2.7
-
-unittest-py27:
-  stage: test
-  script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - pip install -r requirements.txt
-  tags:
-    - python2.7
-
-unittest-py34:
-  stage: test
-  script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - pip install -r requirements.txt
-  tags:
-    - python3/4
+#pep8:
+#  stage: style
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y python-dev python-pip
+#    - pip install -r requirements.txt
+#  tags:
+#    - python2.7
+#
+#unittest-py27:
+#  stage: test
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y python-dev python-pip
+#    - pip install -r requirements.txt
+#  tags:
+#    - python2.7
+#
+#unittest-py34:
+#  stage: test
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y python-dev python-pip
+#    - pip install -r requirements.txt
+#  tags:
+#    - python3/4
 
 docker-deploy:
   stage: deploy
   script:
-    - apt-get update -qy
+#    - apt-get update -qy
 #    - apt-get install curl
 #    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 #    - apt-get install docker.io -qy
