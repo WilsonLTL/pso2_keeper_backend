@@ -38,40 +38,12 @@ docker-deploy:
   image: docker:latest
   services:
     - docker:dind
-  stage: deploy
+  stage: test
   script:
-#    - apt-get update -qy
-#    - apt-get install curl
-#    - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-#    - apt-get install docker.io -qy
-#    - service docker start
-#    - docker version
-#    - export DOCKER_HOST="tcp://localhost:2375"
     - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 cicd-demo
-  tags:
-    - uat
+    - docker tag cicd-demo output
+    - docker login -u wilsonloltl -p Vi26151851@
+    - docker push wilsonloltl/docker_cicd_testing:output
   only:
     - master
-
-#build:
-#  stage: build
-#  script:
-#  - docker build -t cicd-demo .
-#  tags:
-#    - uat
-
-#test:
-#  stage: test
-#  script:
-#  - apt-get update -qy
-#  - apt-get install -y python-dev python-pip
-#  - pip install -r requirements.txt
-
-#docker-deploy:
-#  stage: docker-deploy
-#  script:
-##  - if [ $(docker ps -aq --filter name= cicd-demo) ]; then docker rm -f cicd-demo;fi
-#  - docker run -d -p 5000:5000 cicd-demo
-#  tags:
-#    - uat
