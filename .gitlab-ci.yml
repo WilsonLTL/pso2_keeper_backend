@@ -35,8 +35,7 @@ unittest-py34:
     - python3/4
 
 docker-deploy:
-  image:
-    - docker:latest
+  image: docker:latest
   services:
     - docker:dind
   stage: deploy
