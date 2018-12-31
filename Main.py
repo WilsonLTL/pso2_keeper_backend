@@ -33,6 +33,7 @@ def reset():
     with open(config_location + 'config/mission_card.json', 'w') as f2:
         json.dump(data, f2)
         f2.close()
+    return jsonify({"result":"success"})
 
 
 @app.route('/get_player_card_data', methods=['POST'])
