@@ -3,36 +3,36 @@
 #  - docker:dind
 
 stages:
-#  - style
+  - style
   - test
   - deploy
-#
-#pep8:
-#  stage: style
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-#  tags:
-#    - python2.7
-#
-#unittest-py27:
-#  stage: test
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-#  tags:
-#    - python2.7
-#
-#unittest-py34:
-#  stage: test
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-#  tags:
-#    - python3/4
+
+pep8:
+  stage: style
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tags:
+    - python2.7
+
+unittest-py27:
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tags:
+    - python2.7
+
+unittest-py34:
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+  tags:
+    - python3/4
 
 docker-deploy:
   image: docker:latest
@@ -46,3 +46,7 @@ docker-deploy:
     - docker push wilsonloltl/docker_cicd_testing:cicd-demo
   only:
     - master
+
+image-update:
+  image: ubuntu:latest
+  stage: test
