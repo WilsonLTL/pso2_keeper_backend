@@ -16,7 +16,7 @@ new_player_card = {"player_card":[]}
 @app.route('/',methods=['POST','GET'])
 def enter_api_system():
     result = {
-        "result": "enter api system,123"
+        "result": "enter api system"
     }
     return jsonify(result)
 
