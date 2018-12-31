@@ -3,12 +3,12 @@
 #  - docker:dind
 
 stages:
-  - style
+  - build
   - test
   - deploy
 
 pep8:
-  stage: style
+  stage: build
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
@@ -34,19 +34,26 @@ unittest-py34:
   tags:
     - python3/4
 
-docker-deploy:
+docker-test:
   image: docker:latest
   services:
     - docker:dind
   stage: test
   script:
-    - docker login -u wilsonloltl -p Vi26151851@
-    - docker build -t wilsonloltl/docker_cicd_testing:cicd-demo .
+    - docker build -t cicd-demo .
     - docker run -d -p 5000:5000 wilsonloltl/docker_cicd_testing:cicd-demo
     - docker push wilsonloltl/docker_cicd_testing:cicd-demo
   only:
     - master
 
-image-update:
-  image: ubuntu:latest
-  stage: test
+docker-deploy:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: deploy
+  script:
+    - docker login -u wilsonloltl -p Vi26151851@
+    - docker build -t wilsonloltl/docker_cicd_testing:cicd-demo .
+    - docker push wilsonloltl/docker_cicd_testing:cicd-demo
+  only:
+    - master
