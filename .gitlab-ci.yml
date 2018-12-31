@@ -7,7 +7,7 @@ stages:
   - test
   - deploy
 
-pep8:
+buildtest-python:
   stage: build
   script:
     - apt-get update -qy
@@ -41,8 +41,7 @@ docker-test:
   stage: test
   script:
     - docker build -t cicd-demo .
-    - docker run -d -p 5000:5000 wilsonloltl/docker_cicd_testing:cicd-demo
-    - docker push wilsonloltl/docker_cicd_testing:cicd-demo
+    - docker run -d -p cicd-demo .
   only:
     - master
 

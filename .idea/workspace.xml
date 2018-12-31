@@ -58,8 +58,8 @@
       <file leaf-file-name=".gitlab-ci.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="388">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -264,8 +264,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28036323" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2077185" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28042844" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2077185" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28042844" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -536,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="388">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
