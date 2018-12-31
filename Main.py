@@ -4,8 +4,8 @@ from flask import Flask,jsonify,request
 app = Flask(__name__)
 CORS(app)
 
-# config_location = "/home/ubuntu/pso2_keeper_backend/"
-config_location =""
+config_location = "/home/ubuntu/pso2_keeper_backend/"
+# config_location =""
 global mission
 global player_card
 global quote
@@ -19,6 +19,20 @@ def enter_api_system():
         "result": "enter api system"
     }
     return jsonify(result)
+
+
+@app.route('/reset',methods=['POST'])
+def reset():
+    with open(config_location+'backup/config/mission_card.json') as f:
+        data = json.load(f)
+        global mission
+        mission = data["mission"]
+        global quote
+        quote = data["quote"]
+        f.close()
+    with open(config_location + 'config/mission_card.json', 'w') as f2:
+        json.dump(data, f2)
+        f2.close()
 
 
 @app.route('/get_player_card_data', methods=['POST'])
