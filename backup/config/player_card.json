@@ -112,7 +112,7 @@
             "PS": "",
             "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg",
             "class": "FO",
-            "color": "yellow",
+            "color": "purple",
             "id": 13,
             "leader": false,
             "name": "Matoi2"
@@ -121,7 +121,7 @@
             "PS": "",
             "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg",
             "class": "TE",
-            "color": "yellow",
+            "color": "purple",
             "id": 14,
             "leader": false,
             "name": "Annette2"
@@ -130,7 +130,7 @@
             "PS": "",
             "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg",
             "class": "HU",
-            "color": "yellow",
+            "color": "purple",
             "id": 15,
             "leader": false,
             "name": "假面2"
@@ -139,7 +139,7 @@
             "PS": "",
             "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg",
             "class": "BR",
-            "color": "yellow",
+            "color": "purple",
             "id": 16,
             "leader": false,
             "name": "IO2"
