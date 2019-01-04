@@ -132,6 +132,31 @@ def add_new_player():
     return jsonify(player_card)
 
 
+@app.route('/add_reg_player', methods=['POST'])
+def add_reg_player():
+    result = request.json
+    print(result)
+    try:
+        with open(config_location + 'registered_player/'+str(result["access_token"])+'.json', 'r') as f:
+            data = json.load(f)
+            player ={
+                "id":result["access_token"],
+                "name":data["player_name"],
+                "avatar":data["player_image"],
+                "class":result["class"],
+                "leader":False,
+                'PS':''
+            }
+            player_card["player_card"].append(player)
+            f.close()
+            with open(config_location + 'config/player_card.json', 'w') as f2:
+                json.dump(player_card, f2)
+                f.close()
+        return jsonify(player_card)
+    except Exception as e:
+        print(e)
+        return jsonify({"status":False})
+
 @app.route('/reg_new_player', methods=['POST'])
 def reg_new_player():
     result = request.json
