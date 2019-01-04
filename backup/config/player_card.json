@@ -215,6 +215,114 @@
             "id": 24,
             "leader": false,
             "name": "Gene2"
+        },
+      {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2014111.jpg",
+            "class": "FO",
+            "color": "amber",
+            "id": 25,
+            "leader": true,
+            "name": "Matoi3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Annette.%28PSO2%29.full.1979174.jpg",
+            "class": "TE",
+            "color": "amber",
+            "id": 26,
+            "leader": false,
+            "name": "Annette3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/8/89/51159714_p0.jpg/250px-51159714_p0.jpg",
+            "class": "HU",
+            "color": "amber",
+            "id": 27,
+            "leader": false,
+            "name": "假面3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Io.%28PSO2%29.full.1959821.jpg",
+            "class": "BR",
+            "color": "amber",
+            "id": 28,
+            "leader": false,
+            "name": "IO3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://4.bp.blogspot.com/-LETHHzc-yNA/WtbWZwcehfI/AAAAAAAACR0/NXl13s4ZeiYapLw59aMPQCfKOor4S_5iQCLcBGAs/s1600/vlcsnap-2016-01-30-21h17m02s171.png",
+            "class": "GU",
+            "color": "lime",
+            "id": 29,
+            "leader": false,
+            "name": "Rina3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://pbs.twimg.com/media/CsEg94UVMAAVi7F.jpg",
+            "class": "BR",
+            "color": "lime",
+            "id": 30,
+            "leader": false,
+            "name": "火継3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "lime",
+            "id": 31,
+            "leader": false,
+            "name": "氷莉5"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/b9/62/c4/b962c400f0547b79a1e130a5706829c1.jpg",
+            "class": "SU",
+            "color": "lime",
+            "id": 32,
+            "leader": false,
+            "name": "愛佳3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://img.moegirl.org/common/thumb/0/0a/56698449_p0.jpg/500px-56698449_p0.jpg",
+            "class": "HU",
+            "color": "teal",
+            "id": 33,
+            "leader": false,
+            "name": "氷莉6"
+        },
+        {
+            "PS": "",
+            "avatar": "https://s1.zerochan.net/Stratos.%28PSO2%29.600.2120744.jpg",
+            "class": "HR",
+            "color": "teal",
+            "id": 34,
+            "leader": false,
+            "name": "Stratos3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://static.zerochan.net/Nagisa.%28Psp2i%29.full.273568.jpg",
+            "class": "HU",
+            "color": "teal",
+            "id": 35,
+            "leader": false,
+            "name": "Nagisa3"
+        },
+        {
+            "PS": "",
+            "avatar": "https://i.pinimg.com/originals/06/0d/32/060d32c62c401427a82e82250d8a1e56.jpg",
+            "class": "Fi",
+            "color": "teal",
+            "id": 36,
+            "leader": false,
+            "name": "Gene3"
         }
     ]
 }
