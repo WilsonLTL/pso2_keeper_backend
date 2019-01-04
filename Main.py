@@ -1,6 +1,8 @@
 import logging,json
 from flask_cors import CORS
 from flask import Flask,jsonify,request
+from pathlib import Path
+from random import *
 app = Flask(__name__)
 CORS(app)
 
@@ -129,6 +131,19 @@ def add_new_player():
         f.close()
     return jsonify(player_card)
 
+
+@app.route('/reg_new_player', methods=['POST'])
+def reg_new_player():
+    result = request.json
+    new_userID = randint(1, 1000)
+    new_user_file = Path(config_location+"registered_player/PSO2-ARKS" + str(new_userID) + ".json")
+    while new_user_file.is_file():
+        new_userID = randint(1, 1000)
+        new_user_file = Path(config_location + "registered_player/PSO2-ARKS" + str(new_userID) + ".json")
+    with open(config_location + 'registered_player/PSO2-ARKS'+str(new_userID)+'.json', 'w') as f:
+        json.dump(result, f)
+        f.close()
+    return jsonify({"status":True,"user_access_token":"PSO2-ARKS"+str(new_userID)})
 
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
