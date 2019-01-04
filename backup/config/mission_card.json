@@ -17,7 +17,8 @@
             {
                 "src": "https://pso2roboarks.jp/wp-content/uploads/643ceca08e517f2ae355f8a920e5d465.jpg"
             }
-        ]
+        ],
+      "notebook":""
     },
     "mission_card": {
         "mission": [
@@ -38,7 +39,8 @@
                     {
                         "src": "https://pso2roboarks.jp/wp-content/uploads/643ceca08e517f2ae355f8a920e5d465.jpg"
                     }
-                ]
+                ],
+                 "notebook":""
             },
           {
                 "icon": "http://tn.smilevideo.jp/smile?i=25628574.L",
@@ -48,7 +50,9 @@
                     {
                         "src": "https://pso2oraziyu.jp/wp-content/uploads/2018/06/ss_a20180615_ac.jpg"
                     }
-                ]
+                ],
+                "notebook":""
+
             },{
                 "icon": "https://static.zerochan.net/Matoi.%28PSO2%29.full.2007448.jpg",
                 "mission_name": "氷上のメリークリスマス2018",
@@ -57,7 +61,8 @@
                     {
                         "src": "https://shcpso2.files.wordpress.com/2015/12/phantasy-star-phantasy-star-online-2-io-pso2-2135372.jpeg?w=1400"
                     }
-                ]
+                ],
+                "notebook":""
             },
             {
                 "icon": "https://i.imgur.com/zVNHykd.jpg",
@@ -70,7 +75,8 @@
                     {
                         "src": "https://pbs.twimg.com/media/CzvBk_OVEAALwmy.jpg"
                     }
-                ]
+                ],
+                "notebook":""
             },
             {
                 "icon": "https://pbs.twimg.com/media/BzFcVzHCcAAQCO8.png:small",
@@ -83,7 +89,8 @@
                     {
                         "src": "http://blog-imgs-89.fc2.com/m/a/u/maucha/11535.png"
                     }
-                ]
+                ],
+                "notebook":""
             },
             {
                 "icon": "https://lohas.nicoseiga.jp/thumb/6831544i?1498669929",
@@ -96,7 +103,8 @@
                     {
                         "src": "https://lohas.nicoseiga.jp/thumb/4861483i?"
                     }
-                ]
+                ],
+                "notebook":""
             },
             {
                 "icon": "https://i.imgur.com/shDYK2R.jpg",
@@ -109,7 +117,8 @@
                     {
                         "src": "https://i.ytimg.com/vi/_17yASNsVH8/sddefault.jpg?v=5a3b70bc"
                     }
-                ]
+                ],
+                "notebook":""
             },
             {
                 "icon": "https://image.kusokora.jp/v1/b7daff98c2b748dfa6cb8240c8ac7c33/kusokora/CaGas1_VAAARLQU.jpg",
@@ -122,7 +131,8 @@
                     {
                         "src": "https://pbs.twimg.com/media/CndXXdeUsAAbs6B.jpg"
                     }
-                ]
+                ],
+              "notebook":""
             }
         ]
     }
