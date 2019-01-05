@@ -1,4 +1,4 @@
-import logging,json
+import logging,json,glob
 from flask_cors import CORS
 from flask import Flask,jsonify,request
 from pathlib import Path
@@ -177,6 +177,7 @@ def add_reg_player():
         print(e)
         return jsonify({"status":False})
 
+
 @app.route('/reg_new_player', methods=['POST'])
 def reg_new_player():
     result = request.json
@@ -189,6 +190,50 @@ def reg_new_player():
         json.dump(result, f)
         f.close()
     return jsonify({"status":True,"user_access_token":"PSO2-ARKS"+str(new_userID)})
+
+
+@app.route('/user_login', methods=['POST'])
+def user_login():
+    result = request.json
+    # for player in glob.glob(config_location+"registered_player/*.json"):
+    try:
+        with open(config_location + "registered_player/" + result["player_access_token"] + ".json", 'r') as f:
+            data = json.load(f)
+            if result["player_password"] == data["player_password"]:
+                f.close()
+                return jsonify(
+                    {
+                        "status": True,
+                        "playercard": data
+                     }
+                )
+            else:
+                f.close()
+                return jsonify({"status": False})
+    except Exception as e:
+        print(e)
+        return jsonify({"status": False})
+
+
+@app.route('/user_update', methods=['POST'])
+def user_update():
+    result = request.json
+    print(result)
+    try:
+        with open(config_location + "registered_player/" + result["access_token"] + ".json", 'w') as f:
+            result = {
+                "player_name": result["name"],
+                "player_image": result["avatar"],
+                "player_password": result["password"]
+            }
+            json.dump(result, f)
+            f.close()
+        return jsonify({"status": True,"playercard": result})
+
+    except Exception as e:
+        print(e)
+        return jsonify({"status": False})
+
 
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
