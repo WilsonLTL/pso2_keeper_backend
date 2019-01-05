@@ -119,6 +119,26 @@ def update_mission_data():
         return jsonify({"status": True})
 
 
+@app.route('/update_notebook', methods=['POST'])
+def update_notebook():
+    result = request.json
+    with open(config_location + 'config/mission_card.json', 'r') as f:
+        data = json.load(f)
+        global mission
+        global quote
+        mission["notebook"] = result["notebook"]
+        result = {
+            "mission": mission,
+            "mission_card": data["mission_card"],
+            "quote":quote
+        }
+        f.close()
+    with open(config_location + 'config/mission_card.json', 'w') as f1:
+        json.dump(result, f1)
+        f1.close()
+    return jsonify({"status": True})
+
+
 @app.route('/add_new_player', methods=['POST'])
 def add_new_player():
     result = request.json
