@@ -235,6 +235,25 @@ def user_update():
         return jsonify({"status": False})
 
 
+@app.route('/line_get_user_file', methods=['POST'])
+def line_get_user_file():
+    try:
+        result = str(request.data).split("&")
+        lineID = result[0].split("lineID=")[1]
+        accesstoken = result[1].split("=")[1].split("'")[0]
+        with open(config_location + 'registered_player/' + accesstoken + ".json","r") as f:
+            data = json.load(f)
+            print(data)
+            result = {
+                "status": True,
+                "play_name": data["player_name"],
+                "access_token": accesstoken,
+                "lineID": lineID
+            }
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"status":False})
+
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
@@ -247,6 +266,6 @@ if __name__ == '__main__':
         mission = data["mission"]
         global quote
         quote = data["quote"]
-        app.run(host="0.0.0.0", port=5000)
-        # app.run(host="0.0.0.0", port=8080)
+        # app.run(host="0.0.0.0", port=5000)
+        app.run(host="0.0.0.0", port=8080)
         # app.run(host="172.31.28.201",port=8080)
