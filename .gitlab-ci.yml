@@ -12,15 +12,15 @@ buildtest-python:
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
+    - apt-get install docker.io
     - pip install -r requirements.txt
-    - python Main.py
-
 
 unittest-py27:
   stage: test
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
+    - apt-get install docker.io
     - pip install -r requirements.txt
 
 unittest-py34:
@@ -28,6 +28,7 @@ unittest-py34:
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
+    - apt-get install docker.io
     - pip install -r requirements.txt
 
 docker-test:
