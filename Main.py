@@ -254,6 +254,7 @@ def line_get_user_file():
     except Exception as e:
         return jsonify({"status":False})
 
+
 if __name__ == '__main__':
     with open(config_location+'config/player_card.json') as f:
         data = json.load(f)
@@ -267,5 +268,5 @@ if __name__ == '__main__':
         global quote
         quote = data["quote"]
         # app.run(host="0.0.0.0", port=5000)
-        app.run(host="0.0.0.0", port=8080)
+        app.run(threaded=True, host="0.0.0.0", port=8080)
         # app.run(host="172.31.28.201",port=8080)
