@@ -5,7 +5,7 @@
 stages:
   - build
   - envtest
-  - unittest
+#  - unittest
   - deploy
 
 buildtest-python:
@@ -14,7 +14,6 @@ buildtest-python:
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
-    - apt install docker.io -qy
     - pip install -r requirements.txt
 
 unittest-py27:
@@ -23,7 +22,6 @@ unittest-py27:
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
-    - apt install docker.io -qy
     - pip install -r requirements.txt
 
 unittest-py34:
@@ -32,7 +30,6 @@ unittest-py34:
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
-    - apt install docker.io -qy
     - pip install -r requirements.txt
 
 docker-test:
@@ -41,23 +38,24 @@ docker-test:
     - docker:dind
   stage: envtest
   script:
+    - apt-get update -qy
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
     - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
     - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
   only:
     - master
 
-unittest:
-  image: ubuntu:latest
-  stage: unittest
-  script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - apt install docker.io -qy
-    - pip install -r requirements.txt
-    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
-    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
-    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
+#unittest:
+#  image: ubuntu:latest
+#  stage: unittest
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y python-dev python-pip
+#    - apt install docker.io -qy
+#    - pip install -r requirements.txt
+#    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
+#    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
+#    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
 
 docker-deploy:
   image: docker:latest
