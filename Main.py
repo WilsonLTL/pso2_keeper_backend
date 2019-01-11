@@ -35,7 +35,6 @@ def reset():
     with open(config_location + 'config/mission_card.json', 'w') as f2:
         json.dump(data, f2)
         f2.close()
-
     with open(config_location+'backup/config/player_card.json') as f3:
         data = json.load(f3)
         f3.close()
@@ -51,6 +50,7 @@ def get_player_card_data():
         data = json.load(f)
         global player_card
         player_card = data
+        f.close()
         return jsonify(data)
 
 
@@ -62,6 +62,7 @@ def get_mission_card_data():
         mission = data["mission"]
         global quote
         quote = data["quote"]
+        f.close()
         return jsonify(data)
 
 
@@ -155,7 +156,6 @@ def add_new_player():
 @app.route('/add_reg_player', methods=['POST'])
 def add_reg_player():
     result = request.json
-    print(result)
     try:
         with open(config_location + 'registered_player/'+str(result["access_token"])+'.json', 'r') as f:
             data = json.load(f)
@@ -168,10 +168,12 @@ def add_reg_player():
                 'PS':''
             }
             player_card["player_card"].append(player)
+            print(len(player_card["player_card"]))
+            print(player_card["player_card"])
             f.close()
             with open(config_location + 'config/player_card.json', 'w') as f2:
                 json.dump(player_card, f2)
-                f.close()
+                f2.close()
         return jsonify(player_card)
     except Exception as e:
         print(e)
@@ -268,5 +270,5 @@ if __name__ == '__main__':
         global quote
         quote = data["quote"]
         # app.run(host="0.0.0.0", port=5000)
-        app.run(threaded=True, host="0.0.0.0", port=8080)
+        app.run(threaded=True, host="0.0.0.0", port=3000)
         # app.run(host="172.31.28.201",port=8080)

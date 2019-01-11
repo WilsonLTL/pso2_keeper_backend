@@ -4,8 +4,7 @@
 
 stages:
   - build
-  - envtest
-#  - unittest
+  - test
   - deploy
 
 buildtest-python:
@@ -18,7 +17,7 @@ buildtest-python:
 
 unittest-py27:
   image: ubuntu:latest
-  stage: envtest
+  stage: test
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
@@ -26,36 +25,23 @@ unittest-py27:
 
 unittest-py34:
   image: ubuntu:latest
-  stage: envtest
+  stage: test
   script:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
 
-docker-test:
-  image: docker:latest
-  services:
-    - docker:dind
-  stage: envtest
-  script:
-    - apt-get update -qy
-    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
-    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
-    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
-  only:
-    - master
-
-#unittest:
-#  image: ubuntu:latest
-#  stage: unittest
+#docker-test:
+#  image: docker:latest
+#  services:
+#    - docker:dind
+#  stage: test
 #  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - apt install docker.io -qy
-#    - pip install -r requirements.txt
 #    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
 #    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
 #    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
+#  only:
+#    - master
 
 docker-deploy:
   image: docker:latest
