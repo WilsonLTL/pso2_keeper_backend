@@ -13,6 +13,8 @@ buildtest-python:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
+    - python Main.py
+
 
 unittest-py27:
   stage: test
@@ -27,7 +29,6 @@ unittest-py34:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
-    - python Main.py
 
 docker-test:
   image: docker:latest
