@@ -8,6 +8,7 @@ stages:
   - deploy
 
 buildtest-python:
+  image: ubuntu:latest
   stage: build
   script:
     - apt-get update -qy
@@ -16,6 +17,7 @@ buildtest-python:
     - pip install -r requirements.txt
 
 unittest-py27:
+  image: ubuntu:latest
   stage: test
   script:
     - apt-get update -qy
@@ -24,6 +26,7 @@ unittest-py27:
     - pip install -r requirements.txt
 
 unittest-py34:
+  image: ubuntu:latest
   stage: test
   script:
     - apt-get update -qy
