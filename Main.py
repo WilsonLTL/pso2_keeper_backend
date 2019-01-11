@@ -1,6 +1,6 @@
 import logging,json,glob
 from flask_cors import CORS
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request,abort
 from pathlib import Path
 from random import *
 app = Flask(__name__)
@@ -13,6 +13,11 @@ global player_card
 global quote
 global new_player_card
 new_player_card = {"player_card":[]}
+
+@app.before_request
+def limit_remote_addr():
+    if request.remote_addr == '218.250.11.185' | request.remote_addr == '141.0.9.19':
+        abort(403)
 
 
 @app.route('/',methods=['POST','GET'])
@@ -270,5 +275,5 @@ if __name__ == '__main__':
         global quote
         quote = data["quote"]
         # app.run(host="0.0.0.0", port=5000)
-        app.run(threaded=True, host="0.0.0.0", port=3000)
+        app.run(host="0.0.0.0", port=3000)
         # app.run(host="172.31.28.201",port=8080)
