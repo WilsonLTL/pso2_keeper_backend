@@ -4,8 +4,8 @@
 
 stages:
   - build
-#  - test
-#  - deploy
+  - test
+  - deploy
 
 buildtest-python:
   image: ubuntu:latest
