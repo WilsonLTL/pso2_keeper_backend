@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/player_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/player_card.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/config/mission_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/config/player_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/config/simple_player_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/player_card.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +41,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="75">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -67,38 +71,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mission_card.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/mission_card.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1462" selection-start-column="1462" selection-end-column="1462" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PSO2-ARKS157.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name=".gitlab-ci.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="35" column="13" lean-forward="true" selection-start-column="1" selection-end-line="55" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_card.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/player_card.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="709" selection-start-column="709" selection-end-column="709" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_card.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/config/player_card.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" lean-forward="true" selection-end-line="327" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -106,8 +97,8 @@
       <file leaf-file-name="mission_card.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1272">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="15">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -116,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -182,10 +173,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="849" />
-    <option name="y" value="35" />
-    <option name="width" value="791" />
-    <option name="height" value="964" />
+    <option name="x" value="854" />
+    <option name="y" value="23" />
+    <option name="width" value="818" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,6 +216,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,7 +310,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="849" y="35" width="791" height="964" extended-state="0" />
+    <frame x="854" y="23" width="818" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -328,8 +319,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.30219147" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19377163" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26568758" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28608248" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -360,13 +351,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4183" selection-start-column="4183" selection-end-column="4183" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -422,13 +407,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4183" selection-start-column="4183" selection-end-column="4183" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -470,13 +449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4242" selection-end-column="4242" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -494,13 +467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4304" lean-forward="true" selection-start-column="4304" selection-end-column="4304" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/decorator.py" />
     <entry file="file://$PROJECT_DIR$/backup/config/simple_player_card.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -537,9 +504,6 @@
     <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS209.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS977.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -554,13 +518,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ci_cd.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ci_cd.sh" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -571,20 +529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mission_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1462" lean-forward="true" selection-start-column="1462" selection-end-column="1462" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cicd/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,41 +557,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json">
+    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
+    <entry file="file://$PROJECT_DIR$/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="709" selection-start-column="709" selection-end-column="709" />
+          <caret column="1462" selection-start-column="1462" selection-end-column="1462" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
+    <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1272">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="75">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="35" column="13" lean-forward="true" selection-start-column="1" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
