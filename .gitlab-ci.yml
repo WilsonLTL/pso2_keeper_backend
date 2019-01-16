@@ -28,7 +28,7 @@ unittest-py34:
     - pip install -r requirements.txt
 
 docker-test:
-  image:docker:latest
+  image: docker:latest
   services:
     - docker:dind
   stage: test
