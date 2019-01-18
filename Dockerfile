@@ -6,3 +6,4 @@ COPY . /code
 WORKDIR /code
 EXPOSE 5000
 CMD ["python","Main.py"]
+CMD ["pocha","unittest.py"]
