@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cicd/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cicd/ci_cd.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,8 +19,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pso2_keeper_backend$Main__1_.coverage" NAME="Main (1) Coverage Results" MODIFIED="1547207419607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cicd" />
-    <SUITE FILE_PATH="coverage/pso2_keeper_backend$Main.coverage" NAME="Main Coverage Results" MODIFIED="1547211161031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pso2_keeper_backend$Main.coverage" NAME="Main Coverage Results" MODIFIED="1547783577174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled1$Main.coverage" NAME="Main Coverage Results" MODIFIED="1544854425640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pso2_keeper_backend$unittest.coverage" NAME="unittest Coverage Results" MODIFIED="1547783475059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,10 +42,45 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2907">
-              <caret line="10" selection-start-line="9" selection-end-line="10" />
+            <state relative-caret-position="513">
+              <caret line="277" column="41" selection-start-line="277" selection-start-column="41" selection-end-line="277" selection-end-column="41" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#582#662#0" />
+                <element signature="e#720#1337#0" />
+                <element signature="e#1426#1613#0" />
+                <element signature="e#1704#1946#0" />
+                <element signature="e#2041#2674#0" />
+                <element signature="e#2771#3085#0" />
+                <element signature="e#3172#3604#0" />
+                <element signature="e#3683#4209#0" />
+                <element signature="e#4286#4604#0" />
+                <element signature="e#4681#5560#0" />
+                <element signature="e#5637#6200#0" />
+                <element signature="e#6269#6970#0" />
+                <element signature="e#7041#7585#0" />
+                <element signature="e#7670#8271#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player_card.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/player_card.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1358">
+              <caret line="143" selection-start-line="143" selection-end-line="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unittest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unittest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,18 +91,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -82,8 +112,8 @@
       <file leaf-file-name=".gitlab-ci.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="275">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -101,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -147,13 +177,14 @@
         <option value="$PROJECT_DIR$/registered_player/PSO2-ARKS70.json" />
         <option value="$PROJECT_DIR$/backup/config/mission_card.json" />
         <option value="$PROJECT_DIR$/config/mission_card.json" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/ci_cd.sh" />
         <option value="$PROJECT_DIR$/cicd/ci_cd.sh" />
         <option value="$PROJECT_DIR$/cicd/Main.py" />
         <option value="$PROJECT_DIR$/config/player_card.json" />
-        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/unittest.py" />
       </list>
     </option>
   </component>
@@ -185,6 +216,22 @@
               <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="backup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="backup" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -202,6 +249,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/registered_player" />
       <recent name="$PROJECT_DIR$/backup" />
       <recent name="$PROJECT_DIR$" />
@@ -219,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.unittest">
     <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,13 +306,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="unittest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unittest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Main (1)" />
+      <item itemvalue="Python.unittest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.unittest" />
         <item itemvalue="Python.Main (1)" />
       </list>
     </recent_temporary>
@@ -289,11 +358,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30219147" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2779661" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27854455" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27854455" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -317,13 +386,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -352,6 +414,20 @@
           <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#582#662#0" />
+            <element signature="e#720#1337#0" />
+            <element signature="e#1426#1613#0" />
+            <element signature="e#1704#1946#0" />
+            <element signature="e#2041#2674#0" />
+            <element signature="e#2771#3085#0" />
+            <element signature="e#3172#3604#0" />
+            <element signature="e#3683#4209#0" />
+            <element signature="e#4286#4604#0" />
+            <element signature="e#4681#5560#0" />
+            <element signature="e#5637#6200#0" />
+            <element signature="e#6269#6970#0" />
+            <element signature="e#7041#7585#0" />
+            <element signature="e#7670#8271#0" />
           </folding>
         </state>
       </provider>
@@ -404,6 +480,20 @@
           <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#582#662#0" />
+            <element signature="e#720#1337#0" />
+            <element signature="e#1426#1613#0" />
+            <element signature="e#1704#1946#0" />
+            <element signature="e#2041#2674#0" />
+            <element signature="e#2771#3085#0" />
+            <element signature="e#3172#3604#0" />
+            <element signature="e#3683#4209#0" />
+            <element signature="e#4286#4604#0" />
+            <element signature="e#4681#5560#0" />
+            <element signature="e#5637#6200#0" />
+            <element signature="e#6269#6970#0" />
+            <element signature="e#7041#7585#0" />
+            <element signature="e#7670#8271#0" />
           </folding>
         </state>
       </provider>
@@ -429,6 +519,20 @@
           <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#582#662#0" />
+            <element signature="e#720#1337#0" />
+            <element signature="e#1426#1613#0" />
+            <element signature="e#1704#1946#0" />
+            <element signature="e#2041#2674#0" />
+            <element signature="e#2771#3085#0" />
+            <element signature="e#3172#3604#0" />
+            <element signature="e#3683#4209#0" />
+            <element signature="e#4286#4604#0" />
+            <element signature="e#4681#5560#0" />
+            <element signature="e#5637#6200#0" />
+            <element signature="e#6269#6970#0" />
+            <element signature="e#7041#7585#0" />
+            <element signature="e#7670#8271#0" />
           </folding>
         </state>
       </provider>
@@ -484,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ci_cd.sh" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -502,20 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cicd/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cicd/ci_cd.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/config/player_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -523,7 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/player_card.json" />
     <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,27 +630,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cicd/ci_cd.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cicd/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/player_card.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1358">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2907">
-          <caret line="10" selection-start-line="9" selection-end-line="10" />
+        <state relative-caret-position="513">
+          <caret line="277" column="41" selection-start-line="277" selection-start-column="41" selection-end-line="277" selection-end-column="41" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#582#662#0" />
+            <element signature="e#720#1337#0" />
+            <element signature="e#1426#1613#0" />
+            <element signature="e#1704#1946#0" />
+            <element signature="e#2041#2674#0" />
+            <element signature="e#2771#3085#0" />
+            <element signature="e#3172#3604#0" />
+            <element signature="e#3683#4209#0" />
+            <element signature="e#4286#4604#0" />
+            <element signature="e#4681#5560#0" />
+            <element signature="e#5637#6200#0" />
+            <element signature="e#6269#6970#0" />
+            <element signature="e#7041#7585#0" />
+            <element signature="e#7670#8271#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="275">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>

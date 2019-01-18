@@ -275,6 +275,6 @@ if __name__ == '__main__':
         mission = data["mission"]
         global quote
         quote = data["quote"]
-        # app.run(host="0.0.0.0", port=5000)
-        app.run(host="0.0.0.0", port=3000)
+        app.run(host="0.0.0.0", port=8080)
+        # app.run(host="0.0.0.0", port=3000)
         # app.run(host="172.31.28.201",port=8080)
