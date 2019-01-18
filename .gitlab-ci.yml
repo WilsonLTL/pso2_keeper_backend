@@ -1,15 +1,15 @@
 stages:
-  - build
+#  - build
   - test
   - deploy
 
-buildtest-python:
-  image: ubuntu:latest
-  stage: build
-  script:
-    - apt-get update -qy
-    - apt-get install -y python-dev python-pip
-    - pip install -r requirements.txt
+#buildtest-python:
+#  image: ubuntu:latest
+#  stage: build
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y python-dev python-pip
+#    - pip install -r requirements.txt
 
 unittest-py27:
   image: ubuntu:latest
@@ -38,7 +38,7 @@ docker-test:
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
     - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
     - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
-    - /sbin/ip route|awk '/default/ { print $3 }'
+    - docker logs -f registry.gitlab.com/wilsonltl/pso2_keeper_backend
     - pocha unittest.py
   only:
     - master

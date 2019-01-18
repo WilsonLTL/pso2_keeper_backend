@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # config_location = "/home/ubuntu/pso2_keeper_backend/"
-config_location =""
+config_location = ""
 global mission
 global player_card
 global quote
