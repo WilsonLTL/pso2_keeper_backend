@@ -4,6 +4,5 @@ RUN pip install flask
 RUN pip install flask-cors
 COPY . /code
 WORKDIR /code
-EXPOSE 5000
+EXPOSE 8080
 CMD ["python","Main.py"]
-CMD ["pocha","unittest.py"]
