@@ -6,7 +6,7 @@ import requests
 def _():
     @it('routing:api system check')
     def test_init():
-        url = "http://127.0.0.1:5000/"
+        url = "http://127.0.0.1:8080/"
         payload = ""
         headers = {
             'Content-Type': "application/json",
@@ -18,7 +18,7 @@ def _():
 
     @it('routing:get_player_card_data')
     def test1():
-        url = "http://127.0.0.1:5000/get_player_card_data"
+        url = "http://127.0.0.1:8080/get_player_card_data"
         payload = ""
         headers = {
             'Content-Type': "application/json",
@@ -30,7 +30,7 @@ def _():
 
     @it('routing:get_mission_card_data')
     def test2():
-        url = "http://127.0.0.1:5000/get_mission_card_data"
+        url = "http://127.0.0.1:8080/get_mission_card_data"
         payload = ""
         headers = {
             'Content-Type': "application/json",
