@@ -1,15 +1,15 @@
 stages:
-#  - build
+  - build
   - test
   - deploy
 
-#buildtest-python:
-#  image: ubuntu:latest
-#  stage: build
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
+buildtest-python:
+  image: ubuntu:latest
+  stage: build
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
 
 unittest-py27:
   image: ubuntu:latest
@@ -18,6 +18,8 @@ unittest-py27:
     - apt-get update -qy
     - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
+    - nohup python Main.py &
+    - pocha unittest.py
 
 unittest-py34:
   image: ubuntu:latest
