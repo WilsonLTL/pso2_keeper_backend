@@ -34,7 +34,7 @@ docker-test:
   stage: test
   script:
     - apk add --update \python \python-dev \py-pip \build-base
-    - python Main.py
+    - pip install -r requirements.txt
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
     - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
     - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
