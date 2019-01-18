@@ -15,10 +15,10 @@ global new_player_card
 new_player_card = {"player_card":[]}
 
 
-@app.before_request
-def limit_remote_addr():
-    if request.remote_addr == '218.250.11.185' | request.remote_addr == '141.0.9.19':
-        abort(403)
+# @app.before_request
+# def limit_remote_addr():
+#     if request.remote_addr == '218.250.11.185' | request.remote_addr == '141.0.9.19':
+#         abort(403)
 
 
 @app.route('/',methods=['POST','GET'])

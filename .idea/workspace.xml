@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="-2907">
+              <caret line="10" selection-start-line="9" selection-end-line="10" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -82,8 +83,8 @@
       <file leaf-file-name=".gitlab-ci.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="382">
+              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -167,9 +168,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="854" />
+    <option name="x" value="833" />
     <option name="y" value="23" />
-    <option name="width" value="818" />
+    <option name="width" value="839" />
     <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -184,27 +185,6 @@
             <path>
               <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="backup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="backup" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="registered_player" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +284,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="854" y="23" width="818" height="982" extended-state="0" />
+    <frame x="833" y="23" width="839" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -313,8 +293,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.30219147" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28608248" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27854455" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -537,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/simple_player_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/config/player_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -552,6 +525,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/player_card.json" />
+    <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/mission_card.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -559,8 +542,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registered_player/PSO2-ARKS157.json">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/config/simple_player_card.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -571,25 +558,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="-2907">
+          <caret line="10" selection-start-line="9" selection-end-line="10" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backup/config/mission_card.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        <state relative-caret-position="382">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
         </state>
       </provider>
     </entry>
