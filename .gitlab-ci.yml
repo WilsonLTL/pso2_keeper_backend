@@ -33,7 +33,7 @@ docker-test:
     - docker:dind
   stage: test
   script:
-    - apk add --update \python \python-dev \py-pip \build-base
+    - apk add --update \python \python-dev \py-pip \build-base \curl
     - pip install -r requirements.txt
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
     - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
