@@ -4,5 +4,5 @@ RUN pip install flask
 RUN pip install flask-cors
 COPY . /code
 WORKDIR /code
-EXPOSE 8080
+EXPOSE 5000
 CMD ["python","Main.py"]
