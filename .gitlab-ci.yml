@@ -33,6 +33,7 @@ docker-test:
     - docker:dind
   stage: test
   script:
+    - k --namespace=service-1 exec -it webserver-464642244-ite1k -- hostname -i
     - apk add --update \python \python-dev \py-pip \build-base
     - pip install -r requirements.txt
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
