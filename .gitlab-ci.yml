@@ -38,7 +38,7 @@ docker-test:
     - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
     - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
     - docker run -d -p 5000:5000 registry.gitlab.com/wilsonltl/pso2_keeper_backend
-    - curl 127.0.0.1:5000/
+    - curl http://172.17.0.1:5000/
     - pocha unittest.py
   only:
     - master
