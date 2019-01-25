@@ -61,5 +61,5 @@ eb-deploy:
   stage: deploy
   script:
     - bash gitlab-deploy.sh
-    - eb init -q7
+    - eb init
 #    - eb deploy
