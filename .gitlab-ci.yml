@@ -60,7 +60,7 @@ docker-deploy:
 eb-deploy:
   stage: deploy
   script:
-    - sudo apt install python-pip -qy
+    - apt install python-pip -qy
     - pip install awsebcli --upgrade --user
     - export PATH=~/.local/bin:$PATH
     - eb deploy
