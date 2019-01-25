@@ -62,4 +62,4 @@ eb-deploy:
   script:
   - eb deploy
   tags:
-  - test
+  - eb-deploy
