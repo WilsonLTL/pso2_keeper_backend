@@ -62,6 +62,6 @@ eb-deploy:
   script:
     - bash gitlab-deploy.sh
     - eb init testing-env -r ap-southeast-1 -p docker
-    - eb deploy
+    - eb deploy testing-env
   tags:
   - eb-deploy
