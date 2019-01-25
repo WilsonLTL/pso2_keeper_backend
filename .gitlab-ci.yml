@@ -63,3 +63,5 @@ eb-deploy:
     - bash gitlab-deploy.sh
     - eb init
 #    - eb deploy
+  tags:
+  - eb-deploy
