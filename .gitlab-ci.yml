@@ -61,7 +61,7 @@ eb-deploy:
   stage: deploy
   script:
     - bash gitlab-deploy.sh
-    - eb init testing-env -r ap-southeast-1
+    - eb init testing-env -r ap-southeast-1 -qy
 #    - eb deploy
   tags:
   - eb-deploy
