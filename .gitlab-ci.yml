@@ -59,6 +59,7 @@ docker-deploy:
 
 eb-deploy:
   stage: deploy
+  environment: production
   script:
     - mkdir ~/.aws/
     - touch ~/.aws/credentials
