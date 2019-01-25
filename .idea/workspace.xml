@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-    </list>
+    <list default="true" id="ff519151-c75d-4bb2-8419-40a45826afb7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="537">
-              <caret line="63" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="16" />
+              <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -212,11 +210,6 @@
             <path>
               <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pso2_keeper_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pso2_keeper_backend" type="462c0819:PsiDirectoryNode" />
-              <item name=".elasticbeanstalk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +332,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="839" y="23" width="899" height="982" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -347,8 +339,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.2779661" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3291714" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24504083" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22146893" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24504083" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" weight="0.32911393" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -620,7 +612,7 @@
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
-          <caret line="63" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="16" />
+          <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
         </state>
       </provider>
     </entry>
