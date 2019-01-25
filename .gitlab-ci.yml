@@ -63,5 +63,5 @@ eb-deploy:
   script:
     - bash gitlab-deploy.sh
     - eb deploy
-  tags:
-    - eb-deploy
+#  tags:
+#    - eb-deploy
