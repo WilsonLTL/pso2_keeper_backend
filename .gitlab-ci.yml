@@ -59,9 +59,6 @@ docker-deploy:
 
 eb-deploy:
   stage: deploy
-#  environment: production
   script:
     - bash gitlab-deploy.sh
-    - eb deploy
-#  tags:
-#    - eb-deploy
+#    - eb deploy
