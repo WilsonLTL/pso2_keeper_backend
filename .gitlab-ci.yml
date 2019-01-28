@@ -16,7 +16,7 @@ unittest-py27:
   stage: test
   script:
     - apt-get update -qy
-    - apt-get install -y python-dev python-pipls -a ~
+    - apt-get install -y python-dev python-pip
     - pip install -r requirements.txt
     - nohup python Main.py &
     - pocha unittest.py
