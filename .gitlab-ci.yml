@@ -3,48 +3,50 @@ stages:
 #  - test
   - deploy
 
-#buildtest-python:
-#  image: ubuntu:latest
-#  stage: build
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-#
-#unittest-py27:
-#  image: ubuntu:latest
-#  stage: test
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pipls -a ~
-#    - pip install -r requirements.txt
-#    - nohup python Main.py &
-#    - pocha unittest.py
-#
-#unittest-py34:
-#  image: ubuntu:latest
-#  stage: test
-#  script:
-#    - apt-get update -qy
-#    - apt-get install -y python-dev python-pip
-#    - pip install -r requirements.txt
-#    - nohup python Main.py &
-#    - pocha unittest.py
-#
-#docker-test:
-#  image: docker:latest
-#  services:
-#    - docker:dind
-#  stage: test
-#  script:
-#    - apk add --update \python \python-dev \py-pip \build-base \curl
-#    - pip install -r requirements.txt
-#    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
-#    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
-#    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
-#  only:
-#    - master
+buildtest-python:
+  image: ubuntu:latest
+  stage: build
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
 
+unittest-py27:
+  image: ubuntu:latest
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pipls -a ~
+    - pip install -r requirements.txt
+    - nohup python Main.py &
+    - pocha unittest.py
+
+unittest-py34:
+  image: ubuntu:latest
+  stage: test
+  script:
+    - apt-get update -qy
+    - apt-get install -y python-dev python-pip
+    - pip install -r requirements.txt
+    - nohup python Main.py &
+    - pocha unittest.py
+
+docker-test:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: test
+  script:
+    - apk add --update \python \python-dev \py-pip \build-base \curl
+    - pip install -r requirements.txt
+    - docker login registry.gitlab.com -u wilsonlo1997@gmail.com -p Vi26151851@
+    - docker build -t registry.gitlab.com/wilsonltl/pso2_keeper_backend .
+    - docker run -d -p 8080:8080 registry.gitlab.com/wilsonltl/pso2_keeper_backend
+  only:
+    - master
+
+
+## push to gitlab registry
 docker-deploy:
   image: docker:latest
   services:
@@ -57,6 +59,7 @@ docker-deploy:
   only:
     - master
 
+#deploy to ebs
 eb-deploy:
   stage: deploy
   script:
