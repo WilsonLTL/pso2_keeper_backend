@@ -60,8 +60,6 @@ docker-deploy:
 eb-deploy:
   stage: deploy
   script:
-    - bash gitlab-deploy.sh
+    - bash eb-deploy.sh
     - eb init testing-env -r ap-southeast-1 -p docker
     - eb deploy testing-env2
-  tags:
-  - eb-deploy
